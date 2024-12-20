@@ -1,0 +1,64 @@
+ 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border: 2px solid black;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 3rem;
+  font-family: meatboy;
+  color: black;
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  
+}
+
+.modal-button{
+
+  align-items: center;
+  background-color: var(--grayish);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-family: meatboy;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0.2rem;
+  min-height: 1.25rem;
+  padding: 0.15rem 0.4rem;
+  position: relative;
+  width: auto;
+}
+.modal-button:hover, .modal-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-button:hover {
+  transform: translateY(-1px);
+}
+
+.modal-button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}

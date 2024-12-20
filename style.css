@@ -1,0 +1,153 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  background-color: var(--main-color  );
+}
+
+#game-container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  }
+
+#banner {
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: meatboy;
+  font-size: 3rem;
+  background-color: var(--main-color);
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0px;
+}
+
+h1{
+  margin: 0;
+}
+
+#lives-score-container {
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1rem;  
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+#lives, #score{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin: 2%;
+  margin-right: 10px;
+  font-size: 2rem;
+  width: auto;
+  height: 100%;
+}
+
+#game-canvas {
+  display: block;
+  border: 2px solid black;
+  width: 80%; 
+  height: 80%; 
+  background-color: var(--grayish);
+  margin: 0% auto 5%;
+  box-sizing: border-box;
+}
+
+#canvas-cover {
+  position: absolute;
+  top: 0;
+  left: 10%; /* polovica prejsnga margina ig */
+  width: 80%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.95);
+  color: black;
+  font-size: 3rem;
+  font-family: pixel2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+#options-bar {
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: var(--dark-grey);
+  color: #999;
+  padding: 1rem;  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+  
+
+@font-face{
+  font-family: meatboy;
+  src: url('assets/upheaval/upheavtt.ttf');
+}
+
+@font-face{
+  font-family: pixel2;
+  src: url('assets/crang/crang.ttf');
+}
+
+/*********
+ BUTTON
+ *********/
+.option {
+  align-items: center;
+  background-color: var(--grayish);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-family: meatboy;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0.5rem;
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  width: auto;
+}
+
+.option:hover, .option:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.option:hover {
+  transform: translateY(-1px);
+}
+
+.option:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+:root{
+  --main-color: #cc99ac;
+  --dark-grey: #333;
+  --grayish: #f0f0f0f0;
+}
